@@ -16,24 +16,64 @@
 ###############################################
 */
 
+:root {
+    --main-bg-color:#141922;
+    --footer-color:#282828;
+    --nav-color:#000;
+    --nav-icon-color:#d2d2d2;
+    --nav-color-text:#7d7f84;
+    --bars-color:#adff2f;
+    --text-color:#ffffff;
+    --top-filter-menu-color: #7d7f84;
+}
+
+.d-flex {
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 20px ;
+}
+
+
+/* 
+###############################################
+                    MAIN
+###############################################
+*/
 
 .main-container {
-    height: calc(100vh - 125px);
-    background-color: lightseagreen;
+    height: calc(100vh - 100px);
+    background-color: var(--main-bg-color);
     overflow: hidden;
     display: flex
 }
 
-.nav-menu {
-    
+/* 
+@@@@@@@@@@@@@@@@@@ NAV MENU @@@@@@@@@@@@@@@@@@
+*/
+
+.nav-menu-container {
     width: 300px;
-    background-color: aquamarine;
-    height: 100vh;
-    z-index: 2;
+    background-color: var(--nav-color);
+    height: calc(100vh - 100px);
 }
 
+.spotify-logo {
+    padding:30px
+}
+
+/* 
+@@@@@@@@@@@@@@@@@@ SITE @@@@@@@@@@@@@@@@@@
+*/
+
 .site {
-    padding-top: 125px ;
+    padding-top: 100px ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -43,12 +83,16 @@
 }
 
 .head-fix {
-    height: 125px;
+    height: 100px;
     width: 100%;
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
     top: 0;
-    left: 0;
+    left:250px;
+
+}
+
+.head-fix-btn{
 }
 
 .box {
@@ -58,9 +102,21 @@
     margin: 15px;
 }
 
+/* 
+###############################################
+                    FOOTER
+###############################################
+*/
 
 .foot {
-    background-color: brown;
-    height: 125px;
+    background-color: var(--footer-color);
+    height: 100px;
     width: 100%;
 }
+
+
+/* 
+###############################################
+                MEDIA QUERIES
+###############################################
+*/
