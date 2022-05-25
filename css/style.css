@@ -10,6 +10,51 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color:aqua
+/* 
+###############################################
+                    COMMON
+###############################################
+*/
+
+
+.main-container {
+    height: calc(100vh - 125px);
+    background-color: blueviolet;
+    overflow: auto;
+    display: flex
+}
+
+.nav-menu {
+    width: calc(100% / 4);
+    background-color: aquamarine;
+    height: calc(100vh - 125px);
+    z-index: 2;
+}
+
+.site {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.head-fix {
+    height: 125px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 15px;
+}
+
+
+.foot {
+    background-color: brown;
+    height: 125px;
 }
