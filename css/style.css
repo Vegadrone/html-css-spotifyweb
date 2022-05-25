@@ -20,14 +20,14 @@
 .main-container {
     height: calc(100vh - 125px);
     background-color: blueviolet;
-    overflow: auto;
+    overflow: hidden;
     display: flex
 }
 
 .nav-menu {
-    width: calc(100% / 4);
+    width: 300px;
     background-color: aquamarine;
-    height: calc(100vh - 125px);
+    height: 100vh;
     z-index: 2;
 }
 
@@ -35,6 +35,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 100vh;
+    overflow: auto;
+    width: 100%;
 }
 
 .head-fix {
@@ -57,4 +60,5 @@
 .foot {
     background-color: brown;
     height: 125px;
+    width: 100%;
 }
