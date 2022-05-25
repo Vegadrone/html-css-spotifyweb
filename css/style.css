@@ -19,12 +19,13 @@
 
 .main-container {
     height: calc(100vh - 125px);
-    background-color: blueviolet;
+    background-color: lightseagreen;
     overflow: hidden;
     display: flex
 }
 
 .nav-menu {
+    
     width: 300px;
     background-color: aquamarine;
     height: 100vh;
@@ -32,6 +33,7 @@
 }
 
 .site {
+    padding-top: 125px ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -52,7 +54,7 @@
 .box {
     height: 100px;
     width: 100px;
-    background-color: red;
+    background-color: lightsalmon;
     margin: 15px;
 }
 
