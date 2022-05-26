@@ -31,6 +31,10 @@
     display: flex;
 }
 
+.column {
+    flex-direction: column;
+}
+
 a{
     text-decoration: none;
 }
@@ -38,6 +42,10 @@ a{
 .btn {
     text-decoration: none;
     padding: 20px ;
+}
+
+ul {
+    list-style: none;
 }
 
 
@@ -62,10 +70,40 @@ a{
     width: 300px;
     background-color: var(--nav-color);
     height: calc(100vh - 100px);
+    z-index: 1;
 }
 
 .spotify-logo {
-    padding:30px
+    padding: 20px;
+}
+
+.playlist h2{
+    color: var(--text-color);
+}
+
+.create,
+.pl-voice,
+.actions {
+    color: var(--nav-color-text);
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.create {
+    padding: 20px 0px;
+}
+
+.plus {
+    background-color: var(--nav-color-text);
+    color: var(--nav-color);
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.nav-menu-icons {
+    width: 40px;
+    height: 40px;   
 }
 
 /* 
@@ -73,13 +111,9 @@ a{
 */
 
 .site {
-    padding-top: 100px ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100vh;
+    padding-top: 100px;
+    height: 100%;
     overflow: auto;
-    width: 100%;
 }
 
 .head-fix {
@@ -88,19 +122,41 @@ a{
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
     top: 0;
-    left:250px;
-
+    left:0;
+    justify-content: end;
 }
 
 .head-fix-btn{
+    border: 2px solid var(--text-color);
+    border-radius: 50px;
 }
 
-.box {
+.recently-played{
+    flex-wrap: wrap;
+}
+
+.recently-played h3,
+.create-for h3,
+.pop-artists h3 {
+    color: var(--text-color);
+}
+
+.recently-played span,
+.create-for span,
+.pop-artists span {
+    color: var(--nav-color-text);
+}
+
+/* .box {
     height: 100px;
     width: 100px;
     background-color: lightsalmon;
     margin: 15px;
-}
+} */
+
+
+
+
 
 /* 
 ###############################################
