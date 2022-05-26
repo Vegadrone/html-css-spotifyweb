@@ -56,7 +56,7 @@ ul {
 */
 
 .main-container {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     background-color: var(--main-bg-color);
     overflow: hidden;
     display: flex
@@ -69,7 +69,7 @@ ul {
 .nav-menu-container {
     width: 300px;
     background-color: var(--nav-color);
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     z-index: 1;
 }
 
@@ -131,13 +131,13 @@ ul {
 */
 
 .site {
-    padding-top: 100px;
+    padding-top: 90px;
     height: 100%;
     overflow: auto;
 }
 
 .head-fix {
-    height: 100px;
+    height: 90px;
     width: 100%;
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
@@ -173,29 +173,46 @@ ul {
     color: var(--nav-color-text);
 }
 
-/* .box {
-    height: 100px;
-    width: 100px;
-    background-color: lightsalmon;
-    margin: 15px;
-} */
-
-
-
-
-
 /* 
 ###############################################
                     FOOTER
 ###############################################
 */
 
-.foot {
+.footer-container {
     background-color: var(--footer-color);
-    height: 100px;
+    height: 90px;
     width: 100%;
+    justify-content: space-between
 }
 
+/* 
+@@@@@@@@@@@@@@@@@@ PLAYED ALBUM @@@@@@@@@@@@@@@@@@
+*/
+
+.played-album-img img {
+    height: 70px;
+    width: 70px;
+}
+
+.played-album-text h4{
+    color: var(--text-color);
+}
+
+.played-album-text span,
+.played-album-icons {
+    color: var(--nav-color-text);
+}
+
+/* 
+@@@@@@@@@@@@@@@@@@ PLAYER @@@@@@@@@@@@@@@@@@
+*/
+
+.time-bar {
+    width: 50%;
+    height: 2px;
+    background-color: var(--nav-color-text);
+}
 
 /* 
 ###############################################
