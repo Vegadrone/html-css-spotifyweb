@@ -18,16 +18,17 @@
 ############################################### 
 -->  
     <main>
+        
         <div class="main-container">
 
 <!-- 
     @@@@@@@@@@@@@@@@@@@@@@@@@@ NAV MENU @@@@@@@@@@@@@@@@@@@@@@@@@@
  -->
-            <div class="nav-menu-container">
+            <div class="nav-menu-container d-flex column">
                 <div class="spotify-logo">
                     <img src="./img/logo.svg" alt="logo.svg">
                 </div>
-                <div class="nav-menu">
+                <section class="nav-menu">
                     <ul>
                         <li class="d-flex">
                             <img class="nav-menu-icons" src="./img/home.svg" alt="home.svg"><a class="actions home" href="#">Home</a>
@@ -39,8 +40,8 @@
                             <img class="nav-menu-icons" src="./img/libreria.svg" alt="library.svg"><a class="actions library" href="#">La tua libreria</a>
                         </li>
                     </ul>
-                </div>
-                <div class="playlist">
+                </section>
+                <section class="playlist">
                     <h2>PLAYLIST</h2>
                     <a class="create" href="#"><span class="plus">+</span>Crea Playlist</a>
                     <div class="playlist-names">
@@ -52,7 +53,16 @@
                             <li class="pl-voice">Nome Playlist</li>
                         </ul>
                     </div>
-                </div>
+                </section>
+                <section class="user">
+                    <div class="install">
+                        <a href="#"><img src="./img/download.svg" alt="download.svg">installa app</a>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <a href="#"><img src="./img/profile.svg" alt="profile.svg">John Doe</a>
+                    </div>
+                </section>
                 
             </div>
 
@@ -60,7 +70,7 @@
     @@@@@@@@@@@@@@@@@@@@@@@@@@ SITE @@@@@@@@@@@@@@@@@@@@@@@@@@
  -->
 
-            <div class="site">
+            <section class="site">
                 <div class="head-fix d-flex">
                     <a class="head-fix-btn btn" href="#">EFFETTUA L'UPPGRADE</a>
                 </div>
@@ -135,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
 <!-- 

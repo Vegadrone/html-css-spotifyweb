@@ -106,6 +106,26 @@ ul {
     height: 40px;   
 }
 
+.playlist {
+    flex-grow: 1;
+}
+
+.install img {
+   height: 20px;
+   width: 20px; 
+}
+
+.user {
+    margin: 0 auto;
+    width: 90%; 
+}
+
+.user-profile img {
+    height: 30px;
+    width: 30px;
+    background-color: var(--top-filter-menu-color);
+}
+
 /* 
 @@@@@@@@@@@@@@@@@@ SITE @@@@@@@@@@@@@@@@@@
 */
@@ -133,6 +153,12 @@ ul {
 
 .recently-played{
     flex-wrap: wrap;
+}
+
+/* SITE-TESTI */
+
+.site-main-menu-bar {
+    color: var();
 }
 
 .recently-played h3,
