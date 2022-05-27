@@ -9,6 +9,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
+    <link rel="icon" type="image/spotify-logo" href="./img/favicon.ico">
 </head>
 <body>
 
@@ -63,7 +64,35 @@
                         <a href="#"><img src="./img/profile.svg" alt="profile.svg">John Doe</a>
                     </div>
                 </section>
-                
+            </div>
+            <div class="nav-menu-container-shrinked d-flex column">
+                <div class="spotify-logo small">
+                    <img src="./img/logo-small.svg" alt="logo.svg">
+                </div>
+                <section class="nav-menu">
+                    <ul>
+                        <li class="d-flex">
+                            <a class="actions home" href="#"><img class="nav-menu-icons" src="./img/home.svg" alt="home.svg"></a>
+                        </li>
+                        <li class="d-flex">
+                            <a class="actions search" href="#"><img class="nav-menu-icons" src="./img/search.svg"
+                                    alt="search.svg"></a>
+                        </li>
+                        <li class="d-flex">
+                            <a class="actions library" href="#"><img class="nav-menu-icons" src="./img/libreria.svg"
+                                    alt="library.svg"></a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="user">
+                    <div class="install">
+                        <a href="#"><img src="./img/download.svg" alt="download.svg"></a>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <a href="#"><img src="./img/profile.svg" alt="profile.svg"></a>
+                    </div>
+                </section>
             </div>
 
 <!-- 
@@ -118,29 +147,29 @@
                             <span>testino</span>
                         </div>
                     </div>
-                    <h2>Crato per John Doe</h2>
+                    <h2>Creato per John Doe</h2>
+                    <p>Più asscolti, più accurati saranno i suggerimenti</p>
                     <div class="create-for d-flex">
                         <div class="my-mix">
                             <img class="my-mix-img" src="./img/radar.jpeg" alt="metal_lifting.jpg">
                             <h3>testo testo testo</h3>
-                            <span>testino</span>
                         </div>
                         <div class="my-mix">
                             <img class="my-mix-img" src="./img/mixdaily.jpeg" alt="metal_lifting.jpg">
-                            <h3>testo testo testo</h3>
-                            <span>testino</span>
+                            <h3>testo testo testo</h3> 
                         </div>
                     </div>
                     <h2>Artisti più popolari</h2>
+                    <p>Più asscolti, più accurati saranno i suggerimenti</p>
                     <div class="pop-artists d-flex">
                         <div class="artist">
-                            <img class="artist-img" src="./img/youg.jpeg" alt="metal_lifting.jpg">
-                            <h3>testo testo testo</h3>
+                            <img class="artist-img round-pic" src="./img/youg.jpeg" alt="metal_lifting.jpg">
+                            <h3>Lana del Rey</h3>
                             <span>testino</span>
                         </div>
                         <div class="artist">
-                            <img class="artist-img" src="./img/einaudi.jpeg" alt="metal_lifting.jpg">
-                            <h3>testo testo testo</h3>
+                            <img class="artist-img round-pic" src="./img/einaudi.jpeg" alt="metal_lifting.jpg">
+                            <h3>Ludovico Enaudi</h3>
                             <span>testino</span>
                         </div>
                     </div>
@@ -161,13 +190,13 @@
                 <div class="played-album-img">
                     <img src="./img/sinister.jpeg" alt="sinister.jpeg">
                 </div>
-                <div class="played-album-text">
+                <div class="played-album-text d-flex column">
                     <h4>Sinister</h4>
                     <span>Brano Nome</span>
                 </div>
-                <div class="played-album-icons">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+                <div class="played-album-icons d-flex">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-folder"></i></a>
                 </div>
             </section>
             <section class="player d-flex column">
@@ -186,11 +215,11 @@
             </section>
             <section class="player-actions d-flex">
                 <div class="player-actions-icons d-flex">
-                    <i class="fa-solid fa-list"></i>
-                    <i class="fa-solid fa-display"></i>
-                    <i class="fa-solid fa-volume-high"></i>
+                    <a href="#"><i class="fa-solid fa-list"></i></a>
+                    <a href="#"><i class="fa-solid fa-display"></i></a>
+                    <a href="#"><i class="fa-solid fa-volume-high"></i></a>
                 </div>
-                <div class="time-bar"></div>
+                <div class="player-actions-time-bar"></div>
             </section>
         </div>
     </footer>
