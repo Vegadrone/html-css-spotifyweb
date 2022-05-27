@@ -227,7 +227,7 @@ a{
 
 .btn {
     text-decoration: none;
-    padding: 20px ;
+    padding: 20px;
 }
 
 ul {
@@ -252,7 +252,7 @@ ul {
     height: calc(100vh - 90px);
     background-color: var(--main-bg-color);
     overflow: hidden;
-    display: flex
+    display: flex;
 }
 
 /* 
@@ -260,29 +260,16 @@ ul {
 */
 
 .nav-menu-container {
-    width: 300px;
+    width: 500px;
     background-color: var(--nav-color);
     height: calc(100vh - 90px);
     z-index: 1;
-}
-
-.nav-menu-container-shrinked {
-    width: 60px;
-    height: calc(100vh - 90px);
-    background-color: var(--nav-color);
-    z-index: 1;
-    display: none
+    padding: 20px;
 }
 
 .spotify-logo {
     padding: 20px;
 }
-
-.spotify-logo small {
-    width: 50px;
-    height: 50px;
-}
-
 
 .playlist h2{
     color: var(--text-color);
@@ -296,16 +283,12 @@ ul {
     line-height: 40px;
     margin-bottom: 10px;
 }
-
-.create {
-    padding: 20px 0px;
-}
-
 .plus {
     background-color: var(--nav-color-text);
     color: var(--nav-color);
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: 600;
+    padding: 0px 12px;
 }
 
 .nav-menu-icons {
@@ -315,6 +298,11 @@ ul {
 
 .playlist {
     flex-grow: 1;
+}
+
+.playlist-names{
+    height: 250px;
+    overflow: auto;
 }
 
 .install img {
@@ -327,10 +315,52 @@ ul {
     width: 90%; 
 }
 
+.install a {
+    color:var(--nav-color-text) ;
+}
+
+.user-profile a {
+    color: var(--text-color);
+    
+}
+
+.user hr {
+    margin: 10px 0px;
+}
+
 .user-profile img {
     height: 30px;
     width: 30px;
     background-color: var(--top-filter-menu-color);
+}
+
+/* @@@@@@@@@@@@ XS MENU @@@@@@@@@@@@ */
+
+.nav-menu-container-xs {
+    width: 60px;
+    height: calc(100vh - 90px);
+    background-color: var(--nav-color);
+    z-index: 1;
+    display: none
+}
+
+.spotify-logo small {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-menu-xs {
+    flex-grow: 1;
+}
+
+.user-xs {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.user-xs .user-profile {
+    margin-top: 10px;
 }
 
 /* 
@@ -356,49 +386,63 @@ ul {
 .head-fix-btn{
     border: 2px solid var(--text-color);
     border-radius: 50px;
+
+}
+
+.site-main-container {
+    padding: 30px;
+}
+
+.site-main-container h2 {
+    padding: 20px;
+}
+
+.site-main-container p{
+    padding: 20px;
+}
+
+.site-main-menu-bar ul {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .recently-played{
     flex-wrap: wrap;
 }
 
-.site-main-menu-bar ul{  
-    width: 80%;
-    margin: 0 auto;
-    justify-content: center;
-}
-
-.recently-played{
-}
 
 .album{
     width: calc(100% / 6);
-}
-
-.album-img {
-    /* height: 200px;
-    width: 200px; */
+    text-align: center;
+    padding: 15px;
 }
 
 .my-mix{
-    height:200px;
-    width: 200px;
+    text-align: center;
+    padding: 15px;
 }
 
 .my-mix-img{
     width: 100%;    
 }
 
-
 .artist{
     width: 200px;
     height: 200px;
     text-align: center;
+    padding: 20px;
 }
 
+/* SITE-HOVER */
 
-
-
+.album:hover,
+.my-mix:hover,
+.artist:hover {
+    cursor: pointer;
+}
 
 /* SITE-TEXTS */
 
@@ -444,7 +488,6 @@ ul {
 */
 
 .played-album {
- 
     align-items: center;
 }
 
@@ -562,10 +605,7 @@ ul {
     .site-main-menu-bar li {
         width: calc(100% / 5);
     }
-    
-    .nav-menu-container-shrinked {
-        display: none;
-    }
+   
 }
 
 @media screen and (max-width: 700px) {
@@ -574,10 +614,6 @@ ul {
         }
     .site-main-menu-bar li {
         width: calc(100% / 3);
-    }
-
-    .nav-menu-container-shrinked {
-        display: none;
     }
 
     .played-album-icons {
@@ -592,7 +628,7 @@ ul {
             display: none;
     }
 
-    .nav-menu-container-shrinked {
+    .nav-menu-container-xs {
         display: block;
     }
     
