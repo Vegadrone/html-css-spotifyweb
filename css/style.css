@@ -213,7 +213,7 @@ body {
     --time-bar-color: #5a5a5a;
 }
 
-.d-flex {
+.d-flex{
     display: flex;
 }
 
@@ -298,7 +298,7 @@ ul {
 
 .nav-menu-icons {
     width: 40px;
-    height: 40px;   
+    height: 40px;  
 }
 
 .playlist {
@@ -310,7 +310,7 @@ ul {
 }
 
 .playlist-names{
-    height: 250px;
+    height:200px;
     overflow: auto;
 }
 
@@ -321,10 +321,6 @@ ul {
     font-weight: 600;
     padding: 0px 12px;
     margin-right: 10px;
-}
-
-.plus:hover {
-    background-color: var(--text-color);
 }
 
 .install img {
@@ -363,27 +359,17 @@ ul {
     height: calc(100vh - 90px);
     background-color: var(--nav-color);
     display: none;
-    flex-shrink: 0;
+    padding: 10px;
 }
 
 .spotify-logo-xs {
     width: 30px;
     height: 30px;
-    margin: 10px;
-}
-
-.spotify-logo-xs img {
-    width: 100%;
-}
-
-.nav-menu-xs {
-    flex-grow: 1;
+    margin-bottom: 10px;   
 }
 
 .user-xs {
-    text-align: center;
-    margin: 0 auto;
-    width: 90%;
+    justify-content: space-between;
 }
 
 .user-xs .user-profile {
@@ -436,29 +422,48 @@ ul {
 }
 
 .site-filters-bar {
-    justify-content: center;
+    justify-content: center;    
 }
 
-.site-filters-bar ul {
-    width: 1000px;
-    justify-content: center;
+.site-filters-bar ul { 
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.site-filters-bar li {
+.site-filters-bar ul li {
     font-weight: bold;
     font-size: 15px;
-    flex-shrink: 0;
+    width:180px 
 }
 
 .recently-played{
     flex-wrap: wrap;
+    gap: 20px;
+    
 }
 
 .album{
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 20px);
     text-align: center;
-    padding: 15px;
+    position: relative;
 }
+
+.album-img {
+    width: 100%;
+}
+
+.hover .fa-circle-play {
+    font-size: 50px;
+    color: var(--text-color);
+    position: absolute;
+    bottom:190px;
+    left:75px;
+    display: none;
+}
+
+/* .album:hover .hover .fa-circle-play{
+    display: block;
+} */
 
 .my-mix{
     text-align: center;
@@ -664,8 +669,6 @@ ul {
         margin: 0px 10px;
 }
 
-
-
 /* 
 ###############################################
                 MEDIA QUERIES
@@ -673,14 +676,23 @@ ul {
 */
 
 @media screen and (max-width: 1100px) {
-    .recently-played {
-        flex-wrap: wrap;
-        /* width: calc(100% / 4); */
+    
+    .album {
+        width: calc(100% / 4 - 20px);
+    }
+
+    .site-filters-bar ul li{
+        width: calc(100% / 5);
     }
 }
 @media screen and (max-width: 700px) {
+    
     .album {
-        /* width: calc(100% / 2); */
+            width: calc(100% / 3 - 20px);
+    }
+
+    .site-filters-bar ul li {
+        width: calc(100% / 3);
     }
 
     .played {
@@ -704,6 +716,14 @@ ul {
 
 @media screen and (max-width: 600px) {
     
+    .album {
+            width: calc(100% / 2 - 20px);
+        }
+
+    .site-filters-bar ul li {
+        width: calc(100% / 4);
+    }
+
     .nav-menu-container {
         display: none;
     }
@@ -720,12 +740,6 @@ ul {
         top: 0;
         right: 0;
         justify-content: end;
-    }
-
-    .nav-menu-icons {
-        width: 30px;
-        height: 30px;
-        margin-left: 13px;
     }
    
 }
