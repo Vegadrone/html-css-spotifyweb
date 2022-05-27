@@ -183,7 +183,7 @@
     <footer>
         <div id="player" class="d-flex">
             <div class="played d-flex">
-                <div class="played-album">
+                <div class="played-album d-flex">
                     <img src="./img/sinister.jpeg" alt="sinister.jpeg">
                 </div>
                 <div class="played-album-text d-flex column">
@@ -203,9 +203,20 @@
                     <a class="player-btn" href="#"><i class="fa-solid fa-forward-step"></i></a>
                     <a class="player-btn" href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
                 </div>
-                <div class="time-bar"></div>
+                <div class="time-bar-container d-flex">
+                    <span>0.32</span>
+                    <div class="time-bar"></div>
+                    <span>4.35</span>
+                </div>
             </div>
-            <div class="audio-actions"></div>
+            <div class="audio-actions d-flex">
+                <div class="audio-actions-icons d-flex">
+                    <a href="#"><i class="fa-solid fa-list"></i></a>
+                    <a href="#"><i class="fa-solid fa-display"></i></a>
+                    <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+                </div>
+                <div class="audio-actions-time-bar"></div>
+            </div>
         </div>
     </footer>
 </body>

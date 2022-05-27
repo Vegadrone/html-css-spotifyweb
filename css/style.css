@@ -524,111 +524,7 @@ ul {
     background-color: var(--footer-color);
     height: 90px;
     width: 100%;
-    justify-content: space-between;
 }
-
-/* 
-@@@@@@@@@@@@@@@@@@ PLAYED ALBUM @@@@@@@@@@@@@@@@@@
-*/
-
-/* .played-album {
-    align-items: center;
-}
-
-.played-album-img img {
-    height: 70px;
-    width: 70px;
-    margin-left: 10px;
-}
-
-.played-album-text h4{
-    color: var(--text-color);
-    font-size: 20px;
-}
-
-.played-album-text span,
-.played-album-icons a {
-    color: var(--nav-color-text);
-    margin-right: 20px;
-}
-
-.played-album-icons a{
-    font-size: 20px;
-}
-
-.played-album-text {
-    margin-left: 20px;
-} */
-
-
-/* 
-@@@@@@@@@@@@@@@@@@ PLAYER @@@@@@@@@@@@@@@@@@
-*/
-
-/* .player {
-   
-    margin: 0 auto;
-}
-
-.player-icons {
-    margin-top: 10px;
-    font-size: 20px;
-    text-align: center;
-    
-}
-
-.player-icons a{
-    margin: 20px;
-}
-
-.player-icons a,
-.seconds-fs,
-.seconds-total {
-    color: var(--text-color);
-}
-
-.player .fa-circle-play {
-    font-size: 35px;
-}
-
-.player-bar {
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    width: 80%;
-    height: 5px;
-    margin: 0 auto;
-}
-
-.time-bar {
-    height: 5px;
-    background-color: var(--time-bar-color);
-    margin: 10px;
-} */
-
-/* 
-@@@@@@@@@@@@@@@@@@ PLAYER ACTIONS @@@@@@@@@@@@@@@@@@
-*/
-/* .player-actions {
-    align-items: center;
-}
-
-.player-actions-icons {
-    align-items: center;
-}
-
-.player-actions-icons a {
-    color: var(--text-color);
-    margin-right: 20px;
-}
-
-.player-actions-time-bar {
-    width: 120px;
-    margin: 0 auto;
-    height: 5px;
-    background-color: var(--time-bar-color);
-} */
-
 
 /* ############################################## */
 
@@ -636,55 +532,139 @@ ul {
     height: 90px;
     width: 100%;
     background-color: #282828;
+    justify-content: space-between;
 }
 
 .played {
     width: 250px;
     height: 90px;
-    background-color: lightcoral;
-    flex-shrink: 0;
+    align-items: center;
+    
 }
 
 .played-album {
-    width: 80px;
-    height: 80px;
+    width: 20%;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .played-album img {
     width: 100%;
 }
 
-.controller {
-    width: 100%;
-    align-items: center;
+.played-album-text h4 {
+    color: var(--text-color);
+}
 
+.played-album-text span {
+    color: var(--nav-color-text);
+    font-size: 12px;
+}
+
+.played-album-text h4,
+.played-album-text span {
+    margin-left: 10px;
+}
+
+.played-album-text span:hover {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.played-album-icons {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.played-album-icons .fa-heart,
+.played-album-icons .fa-folder{
+    padding: 5px;
+    color: var(--nav-color-text);
+}
+
+.played-album-icons .fa-heart:hover,
+.played-album-icons .fa-folder:hover {
+    color: var(--text-color);
+}
+
+.controller {
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .controller-icons {
-    width:500px;
+    width: 300px;
     text-align: center;
 }
 
 .player-btn {
     font-size: 35px;
+    padding: 0px 7px 0px 7px;
 }
 
 .fa-circle-play {
     font-size:40px;
 }
+.fa-circle-play:hover{
+    transform: scale(1.10);
+}
+
+.time-bar-container{
+    align-items: center;
+    width: 100%
+}
+
+.time-bar-container span {
+    color: var(--text-color);
+}
 
 .time-bar {
    height: 5px;
    width: 100%;
-   color: var(--time-bar-color); 
+   background: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff 25%,
+        #5a5a5a 25%,
+        #5a5a5a 100%);
+   margin: 0px 10px;
 }
 
 .audio-actions {
     width: 250px;
     height: 90px;
-    background-color: lightcoral;
-    flex-shrink: 0;
+   
+    align-items: center;
+    
 }
+
+.audio-actions-icons {
+    font-size: 25px;
+    justify-content: flex-start;
+}
+
+.audio-actions-icons .fa-list,
+.audio-actions-icons .fa-display,
+.audio-actions-icons .fa-volume-high {
+    padding: 10px 10px 0px 0px;
+}
+
+.audio-actions-time-bar {
+    width: 60%;
+    height: 5px;
+    background-color: var(--time-bar-color);
+    background: linear-gradient(
+        to right,
+                #ffffff 0%,
+                #ffffff 25%,
+                #5a5a5a 25%,
+                #5a5a5a 100%);
+        margin: 0px 10px;
+}
+
+
 
 /* 
 ###############################################
@@ -697,20 +677,24 @@ ul {
         flex-wrap: wrap;
         /* width: calc(100% / 4); */
     }
-
-    .site-filters-bar ul {
-        flex-wrap: wrap;
-    }
-
-    .site-filters-bar li {
-          
-    }
-    
 }
-
 @media screen and (max-width: 700px) {
     .album {
         /* width: calc(100% / 2); */
+    }
+
+    .played {
+        width: 25%;
+    }
+
+    .controller {
+        width: 40%;
+
+    }
+
+    .audio-actions {
+        width: 35%;
+
     }
 
     .played-album-icons {
