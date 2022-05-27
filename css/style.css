@@ -223,6 +223,7 @@ body {
 
 a{
     text-decoration: none;
+    
 }
 
 .btn {
@@ -260,15 +261,21 @@ ul {
 */
 
 .nav-menu-container {
-    width: 500px;
+    width: 250px;
     background-color: var(--nav-color);
     height: calc(100vh - 90px);
-    z-index: 1;
-    padding: 20px;
+    flex-shrink: 0;
+    align-items: center;
 }
 
 .spotify-logo {
-    padding: 20px;
+    width: 200px;
+    margin: 20px 0px;
+}
+
+.spotify-logo img {
+    width: 100%;
+    
 }
 
 .playlist h2{
@@ -281,14 +288,12 @@ ul {
     color: var(--nav-color-text);
     font-size: 20px;
     line-height: 40px;
-    margin-bottom: 10px;
+
 }
-.plus {
-    background-color: var(--nav-color-text);
-    color: var(--nav-color);
-    font-size: 40px;
-    font-weight: 600;
-    padding: 0px 12px;
+.create,
+.pl-voice,
+.actions:hover {
+    color: var(--text-color);
 }
 
 .nav-menu-icons {
@@ -300,9 +305,28 @@ ul {
     flex-grow: 1;
 }
 
+.playlist h2 {
+    margin: 20px 0px;
+}
+
 .playlist-names{
     height: 250px;
     overflow: auto;
+}
+
+.plus {
+    background-color: var(--nav-color-text);
+    color: var(--nav-color);
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0px 12px;
+    margin-right: 10px;
+}
+
+
+
+.plus:hover {
+    background-color: var(--text-color);
 }
 
 .install img {
@@ -340,13 +364,18 @@ ul {
     width: 60px;
     height: calc(100vh - 90px);
     background-color: var(--nav-color);
-    z-index: 1;
-    display: none
+    display: none;
+    flex-shrink: 0;
 }
 
-.spotify-logo small {
-    width: 50px;
-    height: 50px;
+.spotify-logo-xs {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.spotify-logo-xs img {
+    width: 100%;
 }
 
 .nav-menu-xs {
@@ -375,18 +404,25 @@ ul {
 
 .head-fix {
     height: 90px;
-    width: 100%;
+    width: calc(100% - 250px);
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
     top: 0;
-    left:0;
+    right:0;
     justify-content: end;
+    align-items: center;
 }
 
 .head-fix-btn{
     border: 2px solid var(--text-color);
     border-radius: 50px;
+    margin-right: 20px;
+    color: var(--text-color);
+    flex-shrink: 0;
+}
 
+.head-fix-btn:hover {
+   transform: scale(1.10);
 }
 
 .site-main-container {
@@ -401,8 +437,8 @@ ul {
     padding: 20px;
 }
 
-.site-main-menu-bar ul {
-    width: 100%;
+.site-filters-bar ul {
+    width: 500px
     margin: 0 auto;
     justify-content: center;
     flex-wrap: wrap;
@@ -412,7 +448,6 @@ ul {
 .recently-played{
     flex-wrap: wrap;
 }
-
 
 .album{
     width: calc(100% / 6);
@@ -444,9 +479,13 @@ ul {
     cursor: pointer;
 }
 
+.site-filters-bar a:hover {
+    color: var(--text-color);
+}
+
 /* SITE-TEXTS */
 
-.site-main-menu-bar a{
+.site-filters-bar a{
     color: var(--top-filter-menu-color);
 }
 
@@ -631,6 +670,21 @@ ul {
     .nav-menu-container-xs {
         display: block;
     }
-    
+
+    .head-fix {
+        height: 90px;
+        width: calc(100% - 60px);
+        background-color: rgba(0, 0, 0, .5);
+        position: fixed;
+        top: 0;
+        right: 0;
+        justify-content: end;
+    }
+
+    .nav-menu-icons {
+        width: 30px;
+        height: 30px;
+        margin-left: 13px;
+    }
    
 }
